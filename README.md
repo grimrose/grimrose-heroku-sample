@@ -88,6 +88,29 @@ dependencies {
 
 ```
 
+heroku pluginの設定
+---------------------------
+
+[BuildConfig.groovy](https://github.com/grimrose/grimrose-heroku-sample/blob/master/grails-app/conf/BuildConfig.groovy)
+```bash
+# grails-app/conf/BuildConfig.groovy
+
+grails.project.dependency.resolution = {
+
+...
+
+plugins {
+
+...
+
+        compile ":heroku:1.0.1"
+        compile ':cloud-support:1.0.8'
+    }
+
+...
+
+```
+
 gitの設定
 ------------------
 
