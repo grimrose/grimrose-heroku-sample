@@ -5,6 +5,12 @@ http://grails.org/Quick+Start のサンプルアプリケーションを https:/
 
 * **herokuで予めアカウントを登録しておく必要があります**
 
+* 参考URL
+    * [Getting Started with Grails on Heroku](https://devcenter.heroku.com/articles/grails)
+    * [Updating Existing Java Apps to Use Java 7](https://devcenter.heroku.com/articles/add-java-version-to-an-existing-maven-app)
+    * [Heroku Plugin - Reference Documentation](http://grails-plugins.github.io/grails-heroku/docs/manual/guide/index.html)
+    * [heroku / devcenter-grails](https://github.com/heroku/devcenter-grails)
+
 herokuの準備をする
 ---------------------
 
