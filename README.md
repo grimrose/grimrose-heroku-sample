@@ -109,3 +109,50 @@ grails integrate-with --git
 git add .
 git commit -m 'first commit'
 ```
+
+herokuにデプロイするための準備
+---------------------------------
+
+```bash
+heroku create
+```
+
+Procfileの追加
+--------------------
+
+[Procfile](https://github.com/grimrose/grimrose-heroku-sample/blob/master/Procfile)
+```bash
+web: java $JAVA_OPTS -jar server/jetty-runner.jar --port $PORT target/*.war
+```
+
+OpenJDK7の設定
+---------------------
+
+[system.properties](https://github.com/grimrose/grimrose-heroku-sample/blob/master/system.properties)
+```bash
+java.runtime.version=1.7
+```
+
+設定ファイルをコミット
+-----------------------------
+
+```bash
+git add Procfile system.properties
+git commit -m 'add heroku deploy files'
+```
+
+herokuへのデプロイ
+--------------------
+
+```bash
+git push heroku master
+```
+
+アプリケーションへアクセス
+------------------------------
+
+```bash
+heroku open
+```
+
+
